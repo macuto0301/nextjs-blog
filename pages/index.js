@@ -13,7 +13,7 @@ export default function Home() {
       <section className={utilStyles.headingMd}>
         <p>Soy Ingeniero de Computacion y me dedico al desarrollo de aplicaciones web y de escritorio </p>
         <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
+          (Este es un sitio web en Prueba - you’ll be building a site like this on{' '}
           <Link href="/posts/first-post">our Next.js tutorial</Link>.)
         </p>
       </section>
