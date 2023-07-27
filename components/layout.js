@@ -12,10 +12,9 @@ export default function Layout({ children, home }) {
   return (
     
      
-    <div className={styles.container}>
-       <LayoutNav>
+    <div >
+       
       <Head>
-      
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
@@ -30,7 +29,10 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+      <LayoutNav>
+
       </LayoutNav>
+      <div className={styles.container}>
       <header className={styles.header}>
         { home ? (
           <>
@@ -70,6 +72,7 @@ export default function Layout({ children, home }) {
           <Link href="/">← Back to home</Link>
         </div>
       )}
+      </div>
     </div>
   );
 }

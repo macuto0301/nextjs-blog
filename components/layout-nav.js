@@ -6,7 +6,7 @@ export default function LayoutNav(){
       <div>
       <nav>
         <ul className={styles.ul}>
-          <li className={styles.li}><Link className={styles.active} href="/">Inicio</Link></li>
+          <li className={styles.li}><Link className={styles.active} href="/">🏠</Link></li>
           <li className={styles.li}><Link href="/posts/first-post">Sobre nosotros</Link></li>
          <li className={styles.li}><Link href="#">Contacto</Link></li>
          <li className={styles.li}><Link href="#">About</Link></li>
