@@ -3,14 +3,19 @@ import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import LayoutNav from '../components/layout-nav';
 
 const name = 'Augusto Araujo';
 export const siteTitle = 'Desarrollador de Software';
 
 export default function Layout({ children, home }) {
   return (
+    
+     
     <div className={styles.container}>
+       <LayoutNav>
       <Head>
+      
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
@@ -25,8 +30,9 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+      </LayoutNav>
       <header className={styles.header}>
-        {home ? (
+        { home ? (
           <>
             <Image
               priority
