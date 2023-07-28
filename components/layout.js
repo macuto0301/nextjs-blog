@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
-import LayoutNav from '../components/layout-nav';
+import Navbar from './Navbar';
 
 const name = 'Augusto Araujo';
 export const siteTitle = 'Desarrollador de Software';
@@ -29,9 +29,9 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <LayoutNav>
-
-      </LayoutNav>
+      
+      <Navbar />
+     
       <div className={styles.container}>
       <header className={styles.header}>
         { home ? (
@@ -66,6 +66,8 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
+
+     
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
